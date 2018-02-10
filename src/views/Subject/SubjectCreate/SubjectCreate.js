@@ -26,7 +26,7 @@ class SubjectCreate extends Component {
                     <Col xs="12" md="12">
                         <Card>
                             <CardHeader>
-                                Listing
+                                Create new Subject
                             </CardHeader>
                             <CardBody>                                
                                 <Form>

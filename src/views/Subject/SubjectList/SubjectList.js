@@ -5,7 +5,8 @@ import {
     Card,
     CardHeader,
     CardBody,
-    Table
+    Table,
+    Button
 } from 'reactstrap';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -22,7 +23,7 @@ class SubjectList extends Component {
                     <Col xs="12" md="12">
                         <Card>
                             <CardHeader>
-                                Create new Subject
+                                Listing
                             </CardHeader>
                             <CardBody>
                                 <Link to="/subject/new" className="btn btn-primary mb-2">Create new subject</Link>
@@ -31,12 +32,16 @@ class SubjectList extends Component {
                                         <tr>
                                             <th>Name</th>
                                             <th>Date</th>
+                                            <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>Puzzle</td>
                                             <td>01/01/2000</td>
+                                            <td>
+                                                <Button color="warning">Delete</Button>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </Table>
